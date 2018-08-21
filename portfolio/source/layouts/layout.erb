@@ -7,11 +7,14 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag "application" %>
     <%= favicon_tag 'images/favicon.png' %>
   </head>
   <body>
+    <%= partial 'layouts/navbar.html.erb' %>
     <%= yield %>
+    <%= partial 'layouts/footer' %>
   </body>
 </html>

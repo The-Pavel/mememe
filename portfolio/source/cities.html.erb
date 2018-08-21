@@ -1,0 +1,22 @@
+<h1>Where can you find us?</h1>
+<ul class="list-inline">
+  <% %w(berlin shanghai paris tokyo rio).each do |city| %>
+    <li>
+      <img src="https://kitt.lewagon.com/placeholder/cities/<%= city %>" class="img-rounded" height="100px" >
+      <p><%= city.capitalize %></p>
+    </li>
+  <% end %>
+</ul>
+
+<div class="container">
+  <div class="row">
+    <% data.cities.each do |city| %>
+      <div class="col-md-4">
+        <div class="card" style="background-image: url(<%= city.picture %>);">
+          <p><%= city.name %></p>
+          <p><%= city.address %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
