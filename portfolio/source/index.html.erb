@@ -5,9 +5,9 @@ title: Le Wagon - Middleman
 <div id="home">
   <div class="home-content">
     <%= image_tag "logo.png", width: "200" %>
-    <h1>
-      Middleman is now running!
-    </h1>
+    <p>
+      <span style="color: white;" id="typer"></span>
+    </p>
     <p class="about">
       <%= link_to "More about this template", "about.html" %>
     </p>
@@ -16,3 +16,16 @@ title: Le Wagon - Middleman
     </p>
   </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+<!-- <span id="typed"></span> -->
+<script>
+  var options = {
+  strings: ["<i>First</i> sentence.", "&amp; a second sentence."],
+  typeSpeed: 40,
+  loop: true
+}
+  var typed = new Typed('#typer', options)
+</script>
+
+
+

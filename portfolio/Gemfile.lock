@@ -95,6 +95,8 @@ GEM
     middleman-sprockets (4.1.1)
       middleman-core (~> 4.0)
       sprockets (>= 3.0)
+    middleman-webpacker (1.2.0)
+      middleman-core (>= 4.2.1)
     minitest (5.11.3)
     net-sftp (2.1.2)
       net-ssh (>= 2.6.5)
@@ -146,6 +148,7 @@ DEPENDENCIES
   middleman-autoprefixer (~> 2.7)
   middleman-deploy!
   middleman-sprockets
+  middleman-webpacker
   pry-byebug
 
 BUNDLED WITH
