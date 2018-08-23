@@ -1,22 +1,53 @@
-<h1>Where can you find us?</h1>
-<ul class="list-inline">
-  <% %w(berlin shanghai paris tokyo rio).each do |city| %>
-    <li>
-      <img src="https://kitt.lewagon.com/placeholder/cities/<%= city %>" class="img-rounded" height="100px" >
-      <p><%= city.capitalize %></p>
-    </li>
-  <% end %>
-</ul>
-
-<div class="container">
-  <div class="row">
-    <% data.cities.each do |city| %>
-      <div class="col-md-4">
-        <div class="card" style="background-image: url(<%= city.picture %>);">
-          <p><%= city.name %></p>
-          <p><%= city.address %></p>
+<div class="row">
+  <div class="example-1 card">
+    <div class="wrapper">
+      <div class="date">
+        <span class="day">12</span>
+        <span class="month">Aug</span>
+        <span class="year">2016</span>
+      </div>
+      <div class="data">
+        <div class="content">
+          <span class="author">Jane Doe</span>
+          <h1 class="title"><a href="#">Boxing icon has the will for a couple more fights</a></h1>
+          <p class="text">The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.</p>
+          <label for="show-menu" class="menu-button"><span></span></label>
+        </div>
+        <input type="checkbox" id="show-menu" />
+        <ul class="menu-content">
+          <li>
+            <a href="#"><i class="fas fa-bookmark"></i></a>
+          </li>
+          <li><a href="#" ><i class="fa fa-heart"></i><span>47</span></a></li>
+          <li><a href="#""><i class="fas fa-comment"></i><span>8</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="example-2 card">
+    <div class="wrapper">
+      <div class="header">
+        <div class="date">
+          <span class="day">12</span>
+          <span class="month">Aug</span>
+          <span class="year">2016</span>
+        </div>
+        <ul class="menu-content">
+          <li>
+            <a href="#" class="fab fa-bookmark-o"></a>
+          </li>
+          <li><a href="#" class="fab fa-heart-o"><span>18</span></a></li>
+          <li><a href="#" class="fab fa-comment-o"><span>3</span></a></li>
+        </ul>
+      </div>
+      <div class="data">
+        <div class="content">
+          <span class="author">Jane Doe</span>
+          <h1 class="title"><a href="#">Stranger Things: The sound of the Upside Down</a></h1>
+          <p class="text">The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.</p>
+          <a href="#" class="button">Read more</a>
         </div>
       </div>
-    <% end %>
+    </div>
   </div>
 </div>
