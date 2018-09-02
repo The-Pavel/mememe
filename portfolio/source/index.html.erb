@@ -3,7 +3,9 @@ title: Le Wagon - Middleman
 ---
 
 <div id="home">
-  <div class="home-content">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="home-content">
     <%= image_tag "logo.png", width: "200" %>
     <h1>
       <span style="color: white; font-size: 32px; font-style: 'Raleway', sans-serif;" id="typer"></span>
@@ -15,12 +17,43 @@ title: Le Wagon - Middleman
       <%= link_to "Our Locations", "cities.html", class: "btn btn-danger"%>
     </p>
   </div>
-</div>
+    </div>
+  </div>
+    <div class="row card-holder">
+      <div class="col-lg-4">
+        <div class="example-1 card">
+      <div class="wrapper">
+        <div class="date">
+          <span class="day"><i class="fas fa-check"></i></span>
+          <span class="month">Apr</span>
+          <span class="year">2018</span>
+        </div>
+        <div class="data">
+          <div class="content">
+            <%= image_tag "jobify.png", style: "width: 50px;" %>
+            <h1 class="title">Jobify - find the job that matches YOU!</h1>
+            <p class="text">The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.</p>
+            <!-- <label for="show-menu" class="menu-button"><span></span></label> -->
+          </div>
+          <input type="checkbox" id="show-menu" />
+          <ul class="menu-content">
+            <li>
+              <a href="#"><i class="fas fa-bookmark"></i></a>
+            </li>
+            <li><a href="#" ><i class="fa fa-heart"></i><span>47</span></a></li>
+            <li><a href="#""><i class="fas fa-comment"></i><span>8</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 <!-- <span id="typed"></span> -->
 <script>
   var options = {
-  strings: ["Ruby on Rails", "WeChat MP's", "Web Development"],
+  strings: ["Web Apps", "WeChat MP's", "Ruby API's", ],
   typeSpeed: 30,
   loop: true
 }

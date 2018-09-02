@@ -1,10 +1,10 @@
-- name: Berlin
-  - doses:
-    description: "Rudi-Dutschke-Straße 26, 10969 Berlin"
-    ingredient: "Berlin"
-  picture: "https://kitt.lewagon.com/placeholder/cities/berlin"
-- name: Paris
-  - doses:
-    description: "16, villa Gaudelet 75011 Paris"
-    ingredient: "Paris"
-  picture: "https://kitt.lewagon.com/placeholder/cities/paris"
+# - name: Berlin
+#   - doses:
+#     description: "Rudi-Dutschke-Straße 26, 10969 Berlin"
+#     ingredient: "Berlin"
+#   picture: "https://kitt.lewagon.com/placeholder/cities/berlin"
+# - name: Paris
+#   - doses:
+#     description: "16, villa Gaudelet 75011 Paris"
+#     ingredient: "Paris"
+#   picture: "https://kitt.lewagon.com/placeholder/cities/paris"
